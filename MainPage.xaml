@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppQuantidade.MainPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="50">
+        <Label Text="Quantidade" FontSize="40" HorizontalTextAlignment="Center" FontAttributes="Italic" />
+        <Label  x:Name="LblQuantidade"  Text="1" FontSize="48" TextColor="Orange" HorizontalTextAlignment="Center" FontFamily="cursive" />
+        
+        <StackLayout Orientation="Horizontal" Spacing="40">
+            <Button Clicked="Aumentar" CornerRadius="10" Text="+" FontSize="48" BorderWidth="1" BorderColor="orange" BackgroundColor="Black" WidthRequest="90" HeightRequest="90"/>
+            <Button Clicked="Diminuir" CornerRadius="10" Text="-" FontSize="48" BorderWidth="1" BorderColor="orange" BackgroundColor="Black" WidthRequest="90" HeightRequest="90"/>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
